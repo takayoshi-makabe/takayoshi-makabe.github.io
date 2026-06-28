@@ -1,460 +1,637 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DQMJL9DJBH"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-NMP4JCWXZ6');   // GA tag
-    gtag('config', 'UA-209033587-1'); // UA tag
-  </script>
-
-  <title>My Port</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-  <!-- favicon -->
-  <!-- normal -->
-  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/png" />
-  <!-- iOS Bookmark -->
-  <link rel="apple-touch-icon" href="assets/images/favicon.png" sizes="180x180">
-  <!-- Android Bookmark -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="192x192">
-  <link rel="stylesheet" href="assets/css/main.css" />
-  <!-- Vue2 & Vuetify2 -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
-</head>
-
-<body class="is-preload">
-
-  <!-- Header -->
-  <div id="header">
-
-    <div class="top">
-
-      <!-- Logo -->
-      <div id="logo">
-        <span class="image avatar48"><img src="assets/images/index/profile.jpg" alt="" /></span>
-        <h1 id="title">My Port</h1>
-        <p>Saitama, Japan</p>
-      </div>
-
-      <!-- Nav -->
-      <nav id="nav">
-        <ul>
-          <!-- font swesome icons -->
-          <li><a href="#top" id="top-link"><span class="icon solid fa-home">Top</span></a></li>
-          <li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
-          <li><a href="#output" id="output-link"><span class="icon solid fa-book-open">Output & Qualification</span></a>
-          </li>
-          <li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-user-circle">Portfolio</span></a></li>
-        </ul>
-      </nav>
-
-    </div>
-
-    <div class="bottom">
-
-      <!-- Social Icons -->
-      <ul class="icons">
-        <li><a href="https://twitter.com/Takayoshi_ma" class="icon brands fa-twitter" target="_blank"><span
-              class="label">Twitter</span></a></li>
-        <li><a href="https://www.facebook.com/takayoshi.makabe" class="icon brands fa-facebook-f" target="_blank"><span
-              class="label">Facebook</span></a></li>
-        <li><a href="https://github.com/spider-man-tm" class="icon brands fa-github" target="_blank"><span
-              class="label">Github</span></a></li>
-        <li><a href="https://www.instagram.com/takayoshi.makabe/" class="icon brands fa-instagram" target="_blank"><span
-              class="label">Instagram</span></a></li>
-        <li><a href="https://www.linkedin.com/in/takayoshi-makabe-00376718b/" class="icon brands fa-linkedin-in"
-            target="_blank"><span class="label">LinkedIn</span></a></li>
-      </ul>
-
-    </div>
-
-  </div>
-
-  <!-- Main -->
-  <div id="main">
-
-    <!-- Top -->
-    <section id="top" class="one dark cover">
-      <div class="container">
-
-        <header>
-          <h2 class="alt">My Port <strong>Takayoshi</strong></h2>
-          <p>このHPでは自身のポートフォリオや趣味に関する話題について掲載しています</p>
-        </header>
-
-      </div>
-    </section>
-
-    <div id="app">
-      <v-app>
-        <v-main>
-          <!-- About Me -->
-          <section id="about" class="three">
-            <div class="container">
-
-              <br />
-
-              <header>
-                <h2 class="alt"><strong>About Me</strong></h2>
-              </header>
-
-              　現在、データエンジニアとして働いています。趣味はプログラミング、映画・ドラマ、ダンス、野球観戦、金融などです。
-              映画館には年間20回以上はいきます。NetflixやAmazon Prime Videoなどの動画配信サービスもよく利用しています。
-              プロ野球観戦も趣味で、西武ライオンズのファンクラブに入っています。
-              また、ストリートダンスも好きです。金融に関しては趣味で暗号資産トレードbotを作ったりしています。共通の趣味がある方いれれば是非お話しましょう！
-              <br />
-
-            </div>
-          </section>
-
-          <!-- Output & Qualification -->
-          <section id="output" class="two">
-            <div class="container">
-              <header>
-                <h2 class="alt"><strong>Output & Qualification</strong></h2>
-              </header>
-
-              <v-col cols="12" md="12">
-                <v-row>
-
-                  <!-- 受賞 -->
-                  <v-col cols="12" md="4">
-                    <v-card class="mx-auto" elevation="9">
-                      <v-card-title>
-                        <v-icon class="mr-2">mdi-trophy</v-icon> 受賞
-                      </v-card-title>
-                      <v-list lines="two" class="w-25" elevation="2">
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>Kaggle Competitions Master</v-list-item-title>
-                            <v-list-item-subtitle><a href="https://www.kaggle.com/spidermandance"
-                                target="_blank">account</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>AtCoder Green</v-list-item-title>
-                            <v-list-item-subtitle><a href="https://atcoder.jp/users/Spiderman_"
-                                target="_blank">account</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-                    </v-card>
-                  </v-col>
-
-                  <!-- 登壇・インタビュー -->
-                  <v-col cols="12" md="4">
-                    <v-card class="mx-auto" elevation="9">
-                      <v-card-title>
-                        <v-icon class="mr-2">mdi-comment-text-multiple-outline</v-icon> 登壇・インタビュー
-                      </v-card-title>
-                      <v-list lines="two" class="w-25" elevation="2">
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>第2回 関東Kaggler会</v-list-item-title>
-                            <v-list-item-subtitle><a
-                                href="https://speakerdeck.com/takayoshimakabe/di-2hui-guan-dong-kagglerhui-lt"
-                                target="_blank">Slide</a>, <a href="https://connpass.com/event/321748/"
-                                target="_blank">Event</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>Sports Analyst Meetup vol12</v-list-item-title>
-                            <v-list-item-subtitle><a href="https://logmi.jp/tech/articles/326120"
-                                target="_blank">logmi</a>, <a href="https://spoana.connpass.com/"
-                                target="_blank">Event</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-                    </v-card>
-                  </v-col>
-
-                  <!-- ブログ -->
-                  <v-col cols="12" md="4">
-                    <v-card class="mx-auto" elevation="9">
-                      <v-card-title>
-                        <v-icon class="mr-2">mdi-post-outline</v-icon> Blog
-                      </v-card-title>
-                      <v-list lines="two" class="w-25" elevation="2">
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>Zenn</v-list-item-title>
-                            <v-list-item-subtitle><a href="https://github.com/spider-man-tm/blog-zenn"
-                                target="_blank">GitHub Repo</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>Qiita</v-list-item-title>
-                            <v-list-item-subtitle><a href="https://github.com/spider-man-tm/blog-qiita"
-                                target="_blank">GitHub Repo</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-                    </v-card>
-                  </v-col>
-
-                  <!-- OSS -->
-                  <v-col cols="12" md="4">
-                    <v-card class="mx-auto" elevation="9">
-                      <v-card-title>
-                        <v-icon class="mr-2">mdi-account-heart</v-icon> OSS
-                      </v-card-title>
-                      <v-list lines="two" class="w-25" elevation="2">
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title><a href="https://github.com/dataform-co/dataform/pull/1812"
-                                target="_blank">dataform-co/dataform#1812</a></v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title><a href="https://github.com/pytorch/torchtune/pull/1220"
-                                target="_blank">pytorch/torchtune#1220</a></v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title><a href="https://github.com/hatena/hatenablog-workflows/pull/24"
-                                target="_blank">hatena/hatenablog-workflows#24</a></v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-                    </v-card>
-                  </v-col>
-
-                  <!-- 資格 -->
-                  <v-col cols="12" md="4">
-                    <v-card class="mx-auto" elevation="9">
-                      <v-card-title>
-                        <v-icon class="mr-2">mdi-badge-account-horizontal</v-icon> 資格
-                      </v-card-title>
-                      <v-list lines="two" class="w-25" elevation="2">
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>データベーススペシャリスト</v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>ORACLE MASTER Silver SQL 2019</v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>LPIC level1</v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>基本情報技術者</v-list-item-title>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>AWS Solutions Architect Associate</v-list-item-title>
-                            <v-list-item-subtitle><a
-                                href="https://www.credly.com/badges/d0a9f59f-829b-4f4a-b6e8-b9941fa9c567/public_url"
-                                target="_blank">Badge</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                        <v-list-item>
-                          <v-list-item-content>
-                            <v-list-item-title>統計検定2級</v-list-item-title>
-                            <v-list-item-subtitle><a href="https://www.toukei-kentei.jp/koe/koe-7335/"
-                                target="_blank">成績優秀者受賞</a></v-list-item-subtitle>
-                          </v-list-item-content>
-                        </v-list-item>
-                      </v-list>
-                    </v-card>
-                  </v-col>
-
-                </v-row>
-              </v-col>
-
-            </div>
-          </section>
-
-          <!-- Portfolio -->
-          <section id="portfolio" class="two">
-            <div class="container">
-
-              <header>
-                <h2 class="alt"><strong>Portfolio</strong></h2>
-              </header>
-
-              <v-row>
-                <!-- Kaggle Badges -->
-                <v-col cols="12" md="4">
-                  <v-card class="mx-auto" elevation="9">
-                    <v-img src="assets/images/portfolio/portfolio10.png"></v-img>
-                    <v-card-title>
-                      Kaggle Badges
-                    </v-card-title>
-                    <v-card-subtitle>
-                      Badge自動生成 GitHub Actions
-                    </v-card-subtitle>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="orange lighten-2" href="https://github.com/marketplace/actions/kaggle-badges" text>
-                        Link
-                      </v-btn>
-                      <v-btn icon @click="showPortfolio1 = !showPortfolio1">
-                        <v-icon>{{ showPortfolio1 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-                    <v-expand-transition>
-                      <div v-show="showPortfolio1">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                          Kaggleのメダル獲得数、ランキングに応じたバッジを自動生成するGitHub ActionsをMarketplaceで公開しています。
-                        </v-card-text>
-                      </div>
-                    </v-expand-transition>
-                  </v-card>
-                </v-col>
-
-                <!-- まちログ -->
-                <v-col cols="12" md="4">
-                  <v-card class="mx-auto" elevation="9">
-                    <v-img src="assets/images/portfolio/portfolio11.png"></v-img>
-                    <v-card-title>
-                      まちログ
-                    </v-card-title>
-                    <v-card-subtitle>
-                      地域別日記作成アプリ
-                    </v-card-subtitle>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="orange lighten-2" href="https://apps.apple.com/jp/app/まちログ/id6752947243" text>
-                        Link
-                      </v-btn>
-                      <v-btn icon @click="showPortfolio2 = !showPortfolio2">
-                        <v-icon>{{ showPortfolio2 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-                    <v-expand-transition>
-                      <div v-show="showPortfolio2">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                          都道府県・市町村ごとに絵日記を作成・管理することができます。目指せ！47都道府県制覇！
-                        </v-card-text>
-                      </div>
-                    </v-expand-transition>
-                  </v-card>
-                </v-col>
-
-                <!-- Asset Management Simulation -->
-                <v-col cols="12" md="4">
-                  <v-card class="mx-auto" elevation="9">
-                    <v-img src="assets/images/portfolio/portfolio00.png"></v-img>
-                    <v-card-title>
-                      資産管理webアプリ
-                    </v-card-title>
-                    <v-card-subtitle>
-                      Vue3 + Flask のSPA
-                    </v-card-subtitle>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="orange lighten-2" href="https://okane-no-keisan.com/" text>
-                        Link
-                      </v-btn>
-                      <v-btn icon @click="showPortfolio3 = !showPortfolio3">
-                        <v-icon>{{ showPortfolio3 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-                    <v-expand-transition>
-                      <div v-show="showPortfolio3">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                          Vue3(Vuetify3), FirebaseHosting, Flask, Cloud Run, dbtなどを利用した資産額・配当金のシミュレーションApp
-                        </v-card-text>
-                      </div>
-                    </v-expand-transition>
-                  </v-card>
-                </v-col>
-
-              </v-row>
-
-              <v-row>
-                <!-- NPB Data Visualization -->
-                <v-col cols="12" md="4">
-                  <v-card class="mx-auto" elevation="9">
-                    <v-img src="assets/images/portfolio/portfolio08.png"></v-img>
-                    <v-card-title>
-                      NPB Data Visualization
-                    </v-card-title>
-                    <v-card-subtitle>
-                      プロ野球データの可視化サイト
-                    </v-card-subtitle>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="orange lighten-2" href="https://npb-visualization.com/" text>
-                        Link
-                      </v-btn>
-                      <v-btn icon @click="showPortfolio4 = !showPortfolio4">
-                        <v-icon>{{ showPortfolio4 ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-                      </v-btn>
-                    </v-card-actions>
-                    <v-expand-transition>
-                      <div v-show="showPortfolio4">
-                        <v-divider></v-divider>
-                        <v-card-text>
-                          プロ野球12球団の個人・チーム別成績を可視化したWebサイトです。2021年分から現在のまでのデータを確認できます。
-                        </v-card-text>
-                      </div>
-                    </v-expand-transition>
-                  </v-card>
-                </v-col>
-
-              </v-row>
-            </div>
-          </section>
-
-          <!-- Footer -->
-          <div id="footer">
-            <p>Copyright &copy; 2022 MAKABE Takayoshi. All Rights Reserved.</p>
-          </div>
-        </v-main>
-      </v-app>
-    </div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-DQMJL9DJBH"
+    ></script>
     <script>
-      new Vue({
-        el: '#app',
-        vuetify: new Vuetify(),
-        data() {
-          return {
-            showPortfolio1: false,
-            showPortfolio2: false,
-            showPortfolio3: false,
-            showPortfolio4: false,
-          }
-        }
-      })
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-NMP4JCWXZ6"); // GA tag
+      gtag("config", "UA-209033587-1"); // UA tag
     </script>
-  </div>
 
-</body>
+    <title>My Port</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <!-- favicon -->
+    <!-- normal -->
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.ico"
+      type="image/png"
+    />
+    <!-- iOS Bookmark -->
+    <link
+      rel="apple-touch-icon"
+      href="assets/images/favicon.png"
+      sizes="180x180"
+    />
+    <!-- Android Bookmark -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicon.png"
+      sizes="192x192"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Vue2 & Vuetify2 -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css"
+      rel="stylesheet"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+  </head>
 
+  <body class="is-preload">
+    <!-- Header -->
+    <div id="header">
+      <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"
+            ><img src="assets/images/index/profile.jpg" alt=""
+          /></span>
+          <h1 id="title">My Port</h1>
+          <p>Saitama, Japan</p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <!-- font swesome icons -->
+            <li>
+              <a href="#top" id="top-link"
+                ><span class="icon solid fa-home">Top</span></a
+              >
+            </li>
+            <li>
+              <a href="#about" id="about-link"
+                ><span class="icon solid fa-user">About Me</span></a
+              >
+            </li>
+            <li>
+              <a href="#output" id="output-link"
+                ><span class="icon solid fa-book-open"
+                  >Output & Qualification</span
+                ></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" id="portfolio-link"
+                ><span class="icon solid fa-user-circle">Portfolio</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li>
+            <a
+              href="https://twitter.com/Takayoshi_ma"
+              class="icon brands fa-twitter"
+              target="_blank"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/takayoshi.makabe"
+              class="icon brands fa-facebook-f"
+              target="_blank"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/takayoshi-makabe"
+              class="icon brands fa-github"
+              target="_blank"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/takayoshi.makabe/"
+              class="icon brands fa-instagram"
+              target="_blank"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/takayoshi-makabe-00376718b/"
+              class="icon brands fa-linkedin-in"
+              target="_blank"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Top -->
+      <section id="top" class="one dark cover">
+        <div class="container">
+          <header>
+            <h2 class="alt">My Port <strong>Takayoshi</strong></h2>
+            <p>
+              このHPでは自身のポートフォリオや趣味に関する話題について掲載しています
+            </p>
+          </header>
+        </div>
+      </section>
+
+      <div id="app">
+        <v-app>
+          <v-main>
+            <!-- About Me -->
+            <section id="about" class="three">
+              <div class="container">
+                <br />
+
+                <header>
+                  <h2 class="alt"><strong>About Me</strong></h2>
+                </header>
+
+                　現在、データエンジニアとして働いています。趣味はプログラミング、映画・ドラマ、ダンス、野球観戦、金融などです。
+                映画館には年間20回以上はいきます。NetflixやAmazon Prime
+                Videoなどの動画配信サービスもよく利用しています。
+                プロ野球観戦も趣味で、西武ライオンズのファンクラブに入っています。
+                また、ストリートダンスも好きです。金融に関しては趣味で暗号資産トレードbotを作ったりしています。共通の趣味がある方いれれば是非お話しましょう！
+                <br />
+              </div>
+            </section>
+
+            <!-- Output & Qualification -->
+            <section id="output" class="two">
+              <div class="container">
+                <header>
+                  <h2 class="alt"><strong>Output & Qualification</strong></h2>
+                </header>
+
+                <v-col cols="12" md="12">
+                  <v-row>
+                    <!-- 受賞 -->
+                    <v-col cols="12" md="4">
+                      <v-card class="mx-auto" elevation="9">
+                        <v-card-title>
+                          <v-icon class="mr-2">mdi-trophy</v-icon> 受賞
+                        </v-card-title>
+                        <v-list lines="two" class="w-25" elevation="2">
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >Kaggle Competitions Master</v-list-item-title
+                              >
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://www.kaggle.com/spidermandance"
+                                  target="_blank"
+                                  >account</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >AtCoder Green</v-list-item-title
+                              >
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://atcoder.jp/users/Spiderman_"
+                                  target="_blank"
+                                  >account</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                        </v-list>
+                      </v-card>
+                    </v-col>
+
+                    <!-- 登壇・インタビュー -->
+                    <v-col cols="12" md="4">
+                      <v-card class="mx-auto" elevation="9">
+                        <v-card-title>
+                          <v-icon class="mr-2"
+                            >mdi-comment-text-multiple-outline</v-icon
+                          >
+                          登壇・インタビュー
+                        </v-card-title>
+                        <v-list lines="two" class="w-25" elevation="2">
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >第2回 関東Kaggler会</v-list-item-title
+                              >
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://speakerdeck.com/takayoshimakabe/di-2hui-guan-dong-kagglerhui-lt"
+                                  target="_blank"
+                                  >Slide</a
+                                >,
+                                <a
+                                  href="https://connpass.com/event/321748/"
+                                  target="_blank"
+                                  >Event</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >Sports Analyst Meetup vol12</v-list-item-title
+                              >
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://logmi.jp/tech/articles/326120"
+                                  target="_blank"
+                                  >logmi</a
+                                >,
+                                <a
+                                  href="https://spoana.connpass.com/"
+                                  target="_blank"
+                                  >Event</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                        </v-list>
+                      </v-card>
+                    </v-col>
+
+                    <!-- ブログ -->
+                    <v-col cols="12" md="4">
+                      <v-card class="mx-auto" elevation="9">
+                        <v-card-title>
+                          <v-icon class="mr-2">mdi-post-outline</v-icon> Blog
+                        </v-card-title>
+                        <v-list lines="two" class="w-25" elevation="2">
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title>Zenn</v-list-item-title>
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://github.com/takayoshi-makabe/blog-zenn"
+                                  target="_blank"
+                                  >GitHub Repo</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title>Qiita</v-list-item-title>
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://github.com/takayoshi-makabe/blog-qiita"
+                                  target="_blank"
+                                  >GitHub Repo</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                        </v-list>
+                      </v-card>
+                    </v-col>
+
+                    <!-- OSS -->
+                    <v-col cols="12" md="4">
+                      <v-card class="mx-auto" elevation="9">
+                        <v-card-title>
+                          <v-icon class="mr-2">mdi-account-heart</v-icon> OSS
+                        </v-card-title>
+                        <v-list lines="two" class="w-25" elevation="2">
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                ><a
+                                  href="https://github.com/dataform-co/dataform/pull/1812"
+                                  target="_blank"
+                                  >dataform-co/dataform#1812</a
+                                ></v-list-item-title
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                ><a
+                                  href="https://github.com/pytorch/torchtune/pull/1220"
+                                  target="_blank"
+                                  >pytorch/torchtune#1220</a
+                                ></v-list-item-title
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                ><a
+                                  href="https://github.com/hatena/hatenablog-workflows/pull/24"
+                                  target="_blank"
+                                  >hatena/hatenablog-workflows#24</a
+                                ></v-list-item-title
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                        </v-list>
+                      </v-card>
+                    </v-col>
+
+                    <!-- 資格 -->
+                    <v-col cols="12" md="4">
+                      <v-card class="mx-auto" elevation="9">
+                        <v-card-title>
+                          <v-icon class="mr-2"
+                            >mdi-badge-account-horizontal</v-icon
+                          >
+                          資格
+                        </v-card-title>
+                        <v-list lines="two" class="w-25" elevation="2">
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >データベーススペシャリスト</v-list-item-title
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >ORACLE MASTER Silver SQL
+                                2019</v-list-item-title
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title>LPIC level1</v-list-item-title>
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >基本情報技術者</v-list-item-title
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title
+                                >AWS Solutions Architect
+                                Associate</v-list-item-title
+                              >
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://www.credly.com/badges/d0a9f59f-829b-4f4a-b6e8-b9941fa9c567/public_url"
+                                  target="_blank"
+                                  >Badge</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                          <v-list-item>
+                            <v-list-item-content>
+                              <v-list-item-title>統計検定2級</v-list-item-title>
+                              <v-list-item-subtitle
+                                ><a
+                                  href="https://www.toukei-kentei.jp/koe/koe-7335/"
+                                  target="_blank"
+                                  >成績優秀者受賞</a
+                                ></v-list-item-subtitle
+                              >
+                            </v-list-item-content>
+                          </v-list-item>
+                        </v-list>
+                      </v-card>
+                    </v-col>
+                  </v-row>
+                </v-col>
+              </div>
+            </section>
+
+            <!-- Portfolio -->
+            <section id="portfolio" class="two">
+              <div class="container">
+                <header>
+                  <h2 class="alt"><strong>Portfolio</strong></h2>
+                </header>
+
+                <v-row>
+                  <!-- Kaggle Badges -->
+                  <v-col cols="12" md="4">
+                    <v-card class="mx-auto" elevation="9">
+                      <v-img
+                        src="assets/images/portfolio/portfolio10.png"
+                      ></v-img>
+                      <v-card-title> Kaggle Badges </v-card-title>
+                      <v-card-subtitle>
+                        Badge自動生成 GitHub Actions
+                      </v-card-subtitle>
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                          color="orange lighten-2"
+                          href="https://github.com/marketplace/actions/kaggle-badges"
+                          text
+                        >
+                          Link
+                        </v-btn>
+                        <v-btn icon @click="showPortfolio1 = !showPortfolio1">
+                          <v-icon
+                            >{{ showPortfolio1 ? 'mdi-chevron-up' :
+                            'mdi-chevron-down' }}</v-icon
+                          >
+                        </v-btn>
+                      </v-card-actions>
+                      <v-expand-transition>
+                        <div v-show="showPortfolio1">
+                          <v-divider></v-divider>
+                          <v-card-text>
+                            Kaggleのメダル獲得数、ランキングに応じたバッジを自動生成するGitHub
+                            ActionsをMarketplaceで公開しています。
+                          </v-card-text>
+                        </div>
+                      </v-expand-transition>
+                    </v-card>
+                  </v-col>
+
+                  <!-- まちログ -->
+                  <v-col cols="12" md="4">
+                    <v-card class="mx-auto" elevation="9">
+                      <v-img
+                        src="assets/images/portfolio/portfolio11.png"
+                      ></v-img>
+                      <v-card-title> まちログ </v-card-title>
+                      <v-card-subtitle> 地域別日記作成アプリ </v-card-subtitle>
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                          color="orange lighten-2"
+                          href="https://apps.apple.com/jp/app/まちログ/id6752947243"
+                          text
+                        >
+                          Link
+                        </v-btn>
+                        <v-btn icon @click="showPortfolio2 = !showPortfolio2">
+                          <v-icon
+                            >{{ showPortfolio2 ? 'mdi-chevron-up' :
+                            'mdi-chevron-down' }}</v-icon
+                          >
+                        </v-btn>
+                      </v-card-actions>
+                      <v-expand-transition>
+                        <div v-show="showPortfolio2">
+                          <v-divider></v-divider>
+                          <v-card-text>
+                            都道府県・市町村ごとに絵日記を作成・管理することができます。目指せ！47都道府県制覇！
+                          </v-card-text>
+                        </div>
+                      </v-expand-transition>
+                    </v-card>
+                  </v-col>
+
+                  <!-- Asset Management Simulation -->
+                  <v-col cols="12" md="4">
+                    <v-card class="mx-auto" elevation="9">
+                      <v-img
+                        src="assets/images/portfolio/portfolio00.png"
+                      ></v-img>
+                      <v-card-title> 資産管理webアプリ </v-card-title>
+                      <v-card-subtitle> Vue3 + Flask のSPA </v-card-subtitle>
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                          color="orange lighten-2"
+                          href="https://okane-no-keisan.com/"
+                          text
+                        >
+                          Link
+                        </v-btn>
+                        <v-btn icon @click="showPortfolio3 = !showPortfolio3">
+                          <v-icon
+                            >{{ showPortfolio3 ? 'mdi-chevron-up' :
+                            'mdi-chevron-down' }}</v-icon
+                          >
+                        </v-btn>
+                      </v-card-actions>
+                      <v-expand-transition>
+                        <div v-show="showPortfolio3">
+                          <v-divider></v-divider>
+                          <v-card-text>
+                            Vue3(Vuetify3), FirebaseHosting, Flask, Cloud Run,
+                            dbtなどを利用した資産額・配当金のシミュレーションApp
+                          </v-card-text>
+                        </div>
+                      </v-expand-transition>
+                    </v-card>
+                  </v-col>
+                </v-row>
+
+                <v-row>
+                  <!-- NPB Data Visualization -->
+                  <v-col cols="12" md="4">
+                    <v-card class="mx-auto" elevation="9">
+                      <v-img
+                        src="assets/images/portfolio/portfolio08.png"
+                      ></v-img>
+                      <v-card-title> NPB Data Visualization </v-card-title>
+                      <v-card-subtitle>
+                        プロ野球データの可視化サイト
+                      </v-card-subtitle>
+                      <v-card-actions>
+                        <v-spacer></v-spacer>
+                        <v-btn
+                          color="orange lighten-2"
+                          href="https://npb-visualization.com/"
+                          text
+                        >
+                          Link
+                        </v-btn>
+                        <v-btn icon @click="showPortfolio4 = !showPortfolio4">
+                          <v-icon
+                            >{{ showPortfolio4 ? 'mdi-chevron-up' :
+                            'mdi-chevron-down' }}</v-icon
+                          >
+                        </v-btn>
+                      </v-card-actions>
+                      <v-expand-transition>
+                        <div v-show="showPortfolio4">
+                          <v-divider></v-divider>
+                          <v-card-text>
+                            プロ野球12球団の個人・チーム別成績を可視化したWebサイトです。2021年分から現在のまでのデータを確認できます。
+                          </v-card-text>
+                        </div>
+                      </v-expand-transition>
+                    </v-card>
+                  </v-col>
+                </v-row>
+              </div>
+            </section>
+
+            <!-- Footer -->
+            <div id="footer">
+              <p>
+                Copyright &copy; 2022 MAKABE Takayoshi. All Rights Reserved.
+              </p>
+            </div>
+          </v-main>
+        </v-app>
+      </div>
+
+      <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/jquery.scrolly.min.js"></script>
+      <script src="assets/js/jquery.scrollex.min.js"></script>
+      <script src="assets/js/browser.min.js"></script>
+      <script src="assets/js/breakpoints.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <script src="assets/js/main.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+      <script>
+        new Vue({
+          el: "#app",
+          vuetify: new Vuetify(),
+          data() {
+            return {
+              showPortfolio1: false,
+              showPortfolio2: false,
+              showPortfolio3: false,
+              showPortfolio4: false,
+            };
+          },
+        });
+      </script>
+    </div>
+  </body>
 </html>
